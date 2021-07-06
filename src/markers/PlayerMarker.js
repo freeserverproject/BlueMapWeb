@@ -44,7 +44,7 @@ export class PlayerMarker extends Marker {
 
         this.elementObject = new CSS2DObject(htmlToElement(`
 <div id="bm-marker-${this.data.id}" class="bm-marker-${this.data.type}">
-    <img src="assets/playerheads/${this.data.playerUuid}.png" alt="playerhead" draggable="false">
+    <img src="${window.bluemap.baseURL}/assets/playerheads/${this.data.playerUuid}.png" alt="playerhead" draggable="false">
     <div class="bm-player-name"></div>
 </div>
         `));
